@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* Barra de navegacion*/ 
+
+nav{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    position: fixed;
+    z-index: 50;
+}
+.n{
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;    
+
+}
+.n p{
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.nav p:hover{
+    font-size: 1.63rem;
+    margin-left: 2rem;
+    color: gray;
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+.lupa{
+    width: 30px;
+    height: auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+    .n p{
+        display: none;
+    }
+}
+
+
+/* Portada*/
+
+.portada{
+    background-image: url(./resources/images/Banner.jpg);    
+    width: 100%;
+    height: 45rem;
+    background-size: cover;
+    background-position: top center;
+    
+}
+.cuadro-portada{
+    width: 60rem;
+    height: 15rem;    
+    position: absolute;
+    top: 20rem;
+    left: 12rem;    
+}
+.cuadro-portada p{
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 400px) {
+    .portada{
+        height: 45rem;
+        background-size:cover;
+        background-position-x:-500px;
+        
+    }
+    
+    .cuadro-portada{
+        width: 20rem;
+        height: 8rem;    
+        top: 20rem;
+        left: 0.5rem;    
+    }
+
+    .cuadro-portada p{
+        font-size: 3rem;        
+    }
+    
+}
+
+/* Tipos de cursos */
+
+.titulo-cursos p, .titulo-team p, .titulo-contacto p{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: blue;
+    font-weight: bold;
+}
+.cursos, .team, .contacto{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    margin-top: 5rem; 
+
+}
+
+.cursos-separado{
+    width: 25rem;
+    justify-content: center;
+    align-items: center;  
+
+}
+.cursos img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.cursos img:hover{
+    border: 3px solid green;
+}
+
+.cursos h3{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(55, 55, 253);
+}
+
+.cursos h3:hover{
+    color: rgb(55, 55, 253, 0.5);
+}
+.cursos p{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.team img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10%;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .cursos, .team, .contacto{
+        flex-direction: column;
+        margin-top: 2rem;   
+        width:100%;
+    } 
+
+    .cursos{
+        align-items: center;
+    }
+    .cursos img{
+      width: 100%;
+      height: 25rem;   
+    }
+     
+    .cursos-separado{
+        width: 80%;
+        margin-top: 3rem;
+    }
+    .cursos h3{
+        font-size: 2rem;        
+    }
+    .cursos p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    /*Titulos de todo*/
+    .titulo-cursos p, .titulo-team p, .titulo-contacto p{
+        font-size: 3.2rem;
+        margin-top: 2rem;
+    }
+}
+/* Members */ 
+
+.member{    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10%;
+    margin-bottom: 2rem; 
+    
+}
+
+.javi{    
+    background-image: url(./resources/images/Javi.png);
+    background-size: cover;    
+}
+
+.adri{    
+    background-image: url(./resources/images/Adri.png);
+    background-size: cover;
+}
+
+.recuadro-member {
+    background-color: blue;
+    width:95%;
+    text-align: center;
+    color: white;
+    align-items: flex-end;
+    padding: 2rem 0;
+    opacity: 0.7;
+    border-radius: 10%;
+    margin-bottom: 2rem; 
+}
+.recuadro-member:hover{
+    border: 1px solid blue;
+}
+.recuadro-member h3,.contact h3{
+    font-size: 2rem;
+}
+.recuadro-member p, .contact p{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .team{
+        align-items: center;        
+    }
+}
+
+
+/* CONTACTO*/ 
+
+.contacto{
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.map img{
+    width: 40rem;
+    height: 30rem;
+}
+.data{
+    text-align: center;
+    margin-left: 5rem;
+}
+footer p{
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+@media only screen and (max-width: 400px) {
+    .map img{
+        width: 20rem;
+        height: 15rem;
+    }
+    .data{
+        margin-top: 1rem;        
+        margin-left: 0;
+    }
+}
